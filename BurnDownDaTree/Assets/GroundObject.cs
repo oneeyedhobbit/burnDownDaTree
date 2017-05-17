@@ -8,9 +8,9 @@ namespace BDDT
 	public class GroundObject : MonoBehaviour
 	{
 
-		Shape shape;
+		//Shape shape;
 
-		Appearance appearance;
+		//Appearance appearance;
 
 		// explicit list of attribs instead?
 		// e.g. flammability, wetness, etc.  
