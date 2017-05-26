@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace BDDT{
 
-	enum TileType {
+	public enum TileType {
 		unknown
 	}
 
-	public class Tile {
+	public class Tile : MonoBehaviour {
 
 		TileType type = TileType.unknown;
 

@@ -4,13 +4,12 @@ using UnityEngine;
 
 namespace BDDT
 {
-
 	public class Map
 	{
 
-		BoardChunk[] boardChunks;
+		public BoardChunk[] boardChunks;
 
-		Dictionary<string, TileType> tileMap;
+		public Dictionary<string, TileType> tileMap;
 
 	}
 }
