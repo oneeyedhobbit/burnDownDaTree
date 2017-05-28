@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BDDT
-{
 
 	public class GroundObject : MonoBehaviour
 	{
@@ -32,4 +30,3 @@ namespace BDDT
 		
 		}
 	}
-}

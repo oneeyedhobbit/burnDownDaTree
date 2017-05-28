@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BDDT{
-
 	public enum TileType {
 		unknown
 	}
@@ -13,4 +11,4 @@ namespace BDDT{
 		TileType type = TileType.unknown;
 
 	}
-}
+

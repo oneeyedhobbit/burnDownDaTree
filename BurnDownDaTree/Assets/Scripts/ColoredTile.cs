@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BDDT
-{
+
     public class ColoredTile : Tile
     {
 
@@ -19,4 +18,3 @@ namespace BDDT
 
         }
     }
-}

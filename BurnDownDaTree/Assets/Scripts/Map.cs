@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BDDT
-{
 	public class Map
 	{
 
@@ -12,4 +10,3 @@ namespace BDDT
 		public Dictionary<string, TileType> tileMap;
 
 	}
-}

@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BDDT
-{
-
 	public class BoardChunk 
 	{
 
@@ -15,4 +12,3 @@ namespace BDDT
 		GroundObject[] groundObjects;
 
 	}
-}
