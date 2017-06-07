@@ -1,0 +1,56 @@
+﻿namespace BDDT.Board;
+
+struct iVec2
+{
+  x:uint;
+  y:uint;
+}
+
+// All the possible types of tiles
+enum TileType:byte
+{ 
+  tree, 
+  grass, 
+  sand, 
+  ice, 
+  water
+}
+
+// Any data that a tile could contain
+table Tile
+{
+// Each tile has a type, which is used by the application
+// to determine which of the following fields apply
+  type:TileType;
+
+// TILE FIELD DEFINITIONS ------------------------------------
+// Each tile field should be described here as follows.
+// Description (meaning of units) : Types of tiles that use it
+// **Note** if the default value is not overridden, it
+// will not take up any space on the wire
+// -----------------------------------------------------------
+
+// CRACKINESS
+// How close the tile is to breaking (0 = broken, 256 = completely unbroken) : ice
+  crackiness:ubyte = 256;
+
+// WETNESS
+// How wet the tile is (0 = totally dry, 256 = completely drenched) : tree, grass, sand
+  wetness:ubyte; 
+
+}
+
+// A large chunk of the board, which is just 
+// a bunch of tiles in a particular place
+table BoardChunk
+{
+// The position of this chunk the in map (or, position in the superchunk)
+  pos: iVec2;
+
+// The tiles that make up this boardchunk
+// Can assume it's a square, but size is application defined
+  tiles:[Tile];
+
+}
+
+root_type BoardChunk;
