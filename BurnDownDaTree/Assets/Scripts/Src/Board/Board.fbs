@@ -1,4 +1,4 @@
-﻿namespace BDDT.Board;
+﻿namespace BDDT.BoardBuffer;
 
 struct iVec2
 {
@@ -32,7 +32,7 @@ table Tile
 
 // CRACKINESS
 // How close the tile is to breaking (0 = broken, 256 = completely unbroken) : ice
-  crackiness:ubyte = 256;
+  crackiness:ubyte = 255;
 
 // WETNESS
 // How wet the tile is (0 = totally dry, 256 = completely drenched) : tree, grass, sand
